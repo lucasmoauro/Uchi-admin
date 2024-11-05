@@ -11,6 +11,17 @@ export const TableRow = () => {
 				amet facere.
 			</td>
 			<td className="flex-1">24/10/24</td>
+			<td className="flex-1 items-center justify-center flex">
+				<div className="flex justify-evenly w-8/12 items-center">
+					<span className="cursor-pointer">
+						<img src="/pencilEdit.svg" alt="" className="h-6" />
+					</span>
+
+					<span className="cursor-pointer">
+						<img src="/trashcan.svg" alt="" className="h-6" />
+					</span>
+				</div>
+			</td>
 			<td className="flex-1">
 				<input
 					type="checkbox"

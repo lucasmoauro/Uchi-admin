@@ -1,4 +1,4 @@
-import { TableRow } from "../components/table/tableRow";
+import { TableRow } from "../components/table/TableRow";
 
 const thRow = [
 	{
@@ -15,6 +15,9 @@ const thRow = [
 	},
 	{
 		title: "Fecha",
+	},
+	{
+		title: "Acciones",
 	},
 	{
 		title: "Pago?",
