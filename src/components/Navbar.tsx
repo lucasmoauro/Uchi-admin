@@ -7,7 +7,7 @@ type Links = {
 
 const links: Links[] = [
 	{
-		href: "/",
+		href: "/pedidos",
 		title: "Pedidos",
 	},
 	{

@@ -1,3 +1,5 @@
+//! agregar para ver QUE pidio el cliente
+
 export const TableRow = () => {
 	return (
 		<tr className="flex w-full odd:bg-secondary-accent/10 text-center py-3">
