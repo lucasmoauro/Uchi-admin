@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 type Links = {
 	href: string;
@@ -21,6 +21,12 @@ const links: Links[] = [
 ];
 
 export const Navbar = () => {
+	const navigate = useNavigate();
+
+	const closeSession = () => {
+		navigate("/login");
+	};
+
 	return (
 		<aside className="w-2/12 pt-3 h-full bg-primary shadow-3xl z-10 text-accent">
 			<h2 className="text-3xl text-center font-bold">Secciones</h2>
@@ -35,6 +41,14 @@ export const Navbar = () => {
 					</Link>
 				))}
 			</ul>
+			<div className="text-center h-96 flex flex-col justify-end">
+				<button
+					className="text-2xl font-semibold text-center py-2 hover:bg-accent/20"
+					onClick={closeSession}
+				>
+					Cerrar Sesion
+				</button>
+			</div>
 		</aside>
 	);
 };
